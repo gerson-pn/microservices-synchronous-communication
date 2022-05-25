@@ -10,9 +10,9 @@ import com.calculo.soma.dto.Resposta;
 
 @RestController
 public class CalculoControle {
-
 	@GetMapping("/somar/numero/{numero1}/mais/{numero2}")
-	public ResponseEntity<Resposta> somar(@PathVariable double numero1, @PathVariable double numero2) {
+	public ResponseEntity<Resposta> somar(@PathVariable double numero1,
+			@PathVariable double numero2) {
 		Resposta resposta = new Resposta();
 		resposta.setNumero1(numero1);
 		resposta.setNumero2(numero2);
